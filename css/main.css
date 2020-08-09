@@ -1,0 +1,44 @@
+:root {
+  --mainWhite: rgb(243, 220, 245);
+  --mainPurple: #580a5f;
+  --darkPurple: #35045e;
+}
+body {
+  background: var(--mainWhite);
+}
+.input-group-text {
+  background: var(--mainPurple);
+  color: var(--mainWhite);
+  border-color: var(--mainPurple);
+}
+.form-control {
+  border: 0.2rem solid var(--mainPurple);
+}
+.submitBtn {
+  color: var(--darkPurple);
+  background: var(--mainWhite);
+  border: 0.2rem solid var(--darkPurple);
+  transition: all 1s ease-in-out;
+}
+.submitBtn:hover {
+  background: var(--darkPurple);
+  color: var(--mainWhite);
+}
+.fail {
+  border-color: red;
+}
+.complete {
+  border-color: green;
+}
+.feedback {
+  display: none;
+}
+.loading {
+  display: none;
+}
+:disabled {
+  opacity: 0.2 !important;
+}
+.showItem {
+  display: block;
+}
